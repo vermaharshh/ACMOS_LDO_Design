@@ -10,7 +10,8 @@ Gate Voltage (Vg): 0V to 1V (0.1V linear step)
 Channel Length (l): 45nm to 180nm (15nm linear step)
 
 
-NMOS Plots
+## NMOS Plots
+
 gm * ro vs gm/Id:
 
 ![nmos_gmro](https://github.com/user-attachments/assets/e312f69c-cbb0-4ad1-8812-63bd88af8da0)
@@ -24,7 +25,8 @@ Id/w vs gm/Id:
 ![nmos_idw](https://github.com/user-attachments/assets/7e042fa0-aa2f-4d0c-a1f8-fca0f8495c9a)
 
 
-PMOS Plots
+## PMOS Plots
+
 gm * ro vs gm/Id:
 
 
