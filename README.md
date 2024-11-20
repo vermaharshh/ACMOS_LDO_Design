@@ -3,6 +3,12 @@
 ## TechPlots for PMOS and NMOS Transistors
 This repository contains detailed plots for PMOS and NMOS transistors, illustrating critical relationships under varying gate voltage (Vg) and channel length (l). These plots serve as a reference for transistor-level design and analysis.
 
+Simulation Variables:
+
+Gate Voltage (Vg): 0V to 1V (0.1V linear step)
+Channel Length (l): 45nm to 180nm (15nm linear step)
+
+
 NMOS Plots
 gm * ro vs gm/Id:
 
