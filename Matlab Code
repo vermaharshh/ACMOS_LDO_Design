@@ -1,0 +1,62 @@
+% Load the CSV file
+filename = 'nmos_techplot_ft.csv'; % Ensure this is in your MATLAB workspace // filename
+data = readtable(filename);
+
+% Extract data for plotting
+x1 = data{:, 1}; % First column
+y1 = data{:, 2}; % Second column
+
+x2 = data{:, 3}; % Third column
+y2 = data{:, 4}; % Fourth column
+
+x3 = data{:, 5}; % Fifth column
+y3 = data{:, 6}; % Sixth column
+
+x4 = data{:, 7}; % Seventh column
+y4 = data{:, 8}; % Eighth column
+
+x5 = data{:, 9}; % First column
+y5 = data{:, 10}; % Second column
+
+x6 = data{:, 11}; % Third column
+y6 = data{:, 12}; % Fourth column
+
+x7 = data{:, 13}; % Fifth column
+y7 = data{:, 14}; % Sixth column
+
+x8 = data{:, 15}; % Seventh column
+y8 = data{:, 16}; % Eighth column
+
+x9 = data{:, 17}; 
+y9 = data{:, 18}; 
+
+x10 = data{:, 19}; 
+y10 = data{:, 20}; 
+
+% Plot the waveforms
+figure;
+colors = lines(10);  % Generates 10 distinct colors
+
+plot(x1, y1, '-', 'LineWidth', 1, 'Color', colors(1, :)); hold on;
+plot(x2, y2, '-', 'LineWidth', 1, 'Color', colors(2, :));
+plot(x3, y3, '-', 'LineWidth', 1, 'Color', colors(3, :));
+plot(x4, y4, '-', 'LineWidth', 1, 'Color', colors(4, :));
+plot(x5, y5, '-', 'LineWidth', 1, 'Color', colors(5, :));
+plot(x6, y6, '-', 'LineWidth', 1, 'Color', colors(6, :));
+plot(x7, y7, '-', 'LineWidth', 1, 'Color', colors(7, :));
+plot(x8, y8, '-', 'LineWidth', 1, 'Color', colors(8, :));
+plot(x9, y9, '-', 'LineWidth', 1, 'Color', colors(9, :));
+plot(x10, y10, '-', 'LineWidth', 1, 'Color', colors(10, :));
+
+% Add grid and make the plot readable
+grid on;
+
+% Customize the plot
+title('ft vs gm/Id for NMOS');
+xlabel('(gm/Id)');
+ylabel('(ft)');
+
+% Update legend to show values starting from 45nm with intervals of 15nm
+legend('45nm', '60nm', '75nm', '90nm', '105nm', '120nm', '135nm', '150nm','165nm', '180nm', 'Location', 'Best');
+
+hold off;
