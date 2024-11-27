@@ -9,6 +9,8 @@ Gate Voltage (Vg): 0V to 1V (0.1V linear step)
 
 Channel Length (l): 45nm to 180nm (15nm linear step)
 
+The plots are generated for 400mV Vds--nmos 400mV vsd--pmos
+
 
 ## NMOS Plots
 
